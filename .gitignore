@@ -10,9 +10,26 @@ integration-repo
 ivy-cache
 jxl.log
 jmx.log
-org.springframework.jdbc/derby.log
-org.springframework.spring-parent/.classpath
-org.springframework.spring-parent/.project
-org.springframework.test/test-output/
-spring-build
-target
+derby.log
+spring-test/test-output/
+.gradle
+argfile*
+pom.xml
+
+/build
+buildSrc/build
+/spring-*/build
+target/
+
+# Eclipse artifacts, including WTP generated manifests
+.classpath
+.project
+spring-*/src/main/java/META-INF/MANIFEST.MF
+
+# IDEA artifacts and output dirs
+*.iml
+*.ipr
+*.iws
+out
+test-output
+atlassian-ide-plugin.xml
